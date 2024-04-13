@@ -30,6 +30,18 @@ function M.setup()
   -- Auto indent settings
   vim.o.autoindent = true
 
+  -- auto enter in neovim
+  vim.api.nvim_create_autocmd("VimEnter", {
+    callback = function()
+      vim.cmd("Neotree toggle")
+      vim.cmd("wincmd p")
+    end
+  })
+
+  vim.api.nvim_create_autocmd("BufEnter", {
+    command = "set rnu nu",
+  })
+
   -- Enable 24-bit RGB colors
   vim.o.termguicolors = true
 

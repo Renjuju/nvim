@@ -10,7 +10,7 @@ return {
     config = function()
       require("mason").setup()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "gopls", "pylsp" }
+        ensure_installed = { "lua_ls", "gopls", "pylsp", "terraformls" }
       })
 
       local on_attach = function(_, _)
@@ -32,6 +32,10 @@ return {
       }
 
       lspconf.pylsp.setup {
+        on_attach = on_attach
+      }
+
+      lspconf.terraformls.setup {
         on_attach = on_attach
       }
 
