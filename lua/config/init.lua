@@ -30,17 +30,14 @@ function M.setup()
   -- Auto indent settings
   vim.o.autoindent = true
 
-  -- auto enter in neovim
-  vim.api.nvim_create_autocmd("VimEnter", {
-    callback = function()
-      vim.cmd("Neotree toggle")
-      vim.cmd("wincmd p")
-    end
-  })
 
-  vim.api.nvim_create_autocmd("BufEnter", {
-    command = "set rnu nu",
-  })
+  -- keymaps
+  vim.keymap.set("n", "<leader>g", "<cmd>ChatGPT<CR>")
+  vim.keymap.set('n', '<leader>t', function()
+  vim.keymap.set('n', '<leader>r',  '<cmd>Neotree current reveal_force_cwd<CR>')
+    vim.cmd('Neotree toggle')
+    vim.cmd('wincmd p')
+  end, { noremap = true, silent = true })
 
   -- Removes trailing spaces on save
   vim.api.nvim_create_autocmd("BufWritePre", {

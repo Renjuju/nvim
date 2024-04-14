@@ -12,8 +12,4 @@ return {
       "nvim-telescope/telescope.nvim"
     }
   },
-  --keymaps = function()
-  --  -- key bindings for ChatGPT
-  --  vim.keymap.set("n", "<leader>g", "<cmd>lua require('chatgpt').open()<CR>")
-  --end
 }
