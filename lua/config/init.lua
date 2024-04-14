@@ -42,6 +42,11 @@ function M.setup()
     command = "set rnu nu",
   })
 
+  -- Removes trailing spaces on save
+  vim.api.nvim_create_autocmd("BufWritePre", {
+    command = [[%s/\s\+$//e]],
+  })
+
   -- Enable 24-bit RGB colors
   vim.o.termguicolors = true
 
