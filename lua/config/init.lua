@@ -32,18 +32,6 @@ function M.setup()
 
 
   -- keymaps
-  vim.keymap.set("n", "<leader>g", "<cmd>ChatGPT<CR>")
-  vim.keymap.set('n', '<leader>t', function()
-  vim.keymap.set('n', '<leader>r',  '<cmd>Neotree current reveal_force_cwd<CR>')
-    vim.cmd('Neotree toggle')
-    vim.cmd('wincmd p')
-  end, { noremap = true, silent = true })
-
-  -- Removes trailing spaces on save
-  vim.api.nvim_create_autocmd("BufWritePre", {
-    command = [[%s/\s\+$//e]],
-  })
-
   -- Enable 24-bit RGB colors
   vim.o.termguicolors = true
 
