@@ -23,6 +23,19 @@ function M.setup()
   vim.keymap.set('n', '<leader>r', '<cmd>Neotree current reveal_force_cwd<CR>')
 
 
+  function open_link()
+    local url = vim.fn.expand("<cWORD>")
+    if url ~= "" then
+      vim.fn.jobstart({ "open", url })
+    end
+  end
+
+  -- Map the gx key combination to the open_link function
+  vim.api.nvim_set_keymap('n', 'gx', ':lua open_link()<CR>', { noremap = true })
+
+
+  vim.keymap.set('n', '<Esc><Esc>', '<cmd>nohlsearch<CR>', { noremap = true, silent = true })
+
   -- Open config files
   vim.keymap.set('n', '<leader>c', function()
     vim.cmd('cd ~/.config/nvim/')
