@@ -44,6 +44,10 @@ function M.setup()
   vim.api.nvim_set_keymap("n", "<leader>qd", [[<cmd>lua require("persistence").stop()<cr>]], {})
 
 
+  -- Fugitive
+  vim.keymap.set('n', '<leader>G', '<cmd>Git<CR>', { noremap = true, silent = true })
+
+
   vim.keymap.set('n', '<Esc><Esc>', '<cmd>nohlsearch<CR>', { noremap = true, silent = true })
 
   -- Open config files
