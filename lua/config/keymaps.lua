@@ -46,9 +46,10 @@ function M.setup()
 
   -- Fugitive
   vim.keymap.set('n', '<leader>G', '<cmd>Git<CR>', { noremap = true, silent = true })
-
-
   vim.keymap.set('n', '<Esc><Esc>', '<cmd>nohlsearch<CR>', { noremap = true, silent = true })
+
+  vim.keymap.set('n', '<leader>gh', '<cmd>GBrowse<CR>', { noremap = true, silent = true })
+  vim.keymap.set('v', '<leader>gh', ":<C-u>'<,'>GBrowse<CR>", {noremap = true, silent = true})
 
   -- Open config files
   vim.keymap.set('n', '<leader>c', function()
