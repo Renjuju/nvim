@@ -44,6 +44,9 @@ function M.setup()
   vim.api.nvim_set_keymap("n", "<leader>qd", [[<cmd>lua require("persistence").stop()<cr>]], {})
 
 
+  -- View PR
+  vim.keymap.set('n', '<leader>gp', '<cmd>!gh pr view --web || gh pr create --web<CR>', { noremap = true, silent = true })
+
   -- Fugitive
   vim.keymap.set('n', '<leader>G', '<cmd>Git<CR>', { noremap = true, silent = true })
   vim.keymap.set('n', '<Esc><Esc>', '<cmd>nohlsearch<CR>', { noremap = true, silent = true })
