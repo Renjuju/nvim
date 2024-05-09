@@ -39,6 +39,10 @@ return {
         on_attach = on_attach
       }
 
+      lspconf.ruby_lsp.setup {
+        on_attach = on_attach
+      }
+
     end
   }
 }

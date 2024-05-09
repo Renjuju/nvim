@@ -53,6 +53,8 @@ function M.setup()
 
   vim.keymap.set('n', '<leader>gh', '<cmd>GBrowse<CR>', { noremap = true, silent = true })
   vim.keymap.set('v', '<leader>gh', ":<C-u>'<,'>GBrowse<CR>", {noremap = true, silent = true})
+  vim.keymap.set('n', '<leader>gl', '<cmd>Git log<CR>', { noremap = true, silent = true })
+  vim.keymap.set('n', '<leader>dv', '<cmd>:Gvdiffsplit<CR>', { noremap = true, silent = true })
 
   -- Open config files
   vim.keymap.set('n', '<leader>c', function()

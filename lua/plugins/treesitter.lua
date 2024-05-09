@@ -22,6 +22,7 @@ return {
         "query",
         "regex",
         "ruby",
+        "terraform",
         "toml",
         "tsx",
         "typescript",
