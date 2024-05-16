@@ -26,6 +26,7 @@ function M.setup()
   vim.o.smartcase = true          -- Smart case sensitivity
   vim.o.clipboard = "unnamedplus" -- Use system clipboard
   vim.wo.colorcolumn = "80"       -- Set color column at 80th column
+  vim.o.conceallevel = 1          -- Show concealable characters
 
   -- Auto indent settings
   vim.o.autoindent = true

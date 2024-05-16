@@ -1,5 +1,6 @@
 {
   "ChatGPT.nvim": { "branch": "main", "commit": "df53728e05129278d6ea26271ec086aa013bed90" },
+  "FTerm.nvim": { "branch": "master", "commit": "d1320892cc2ebab472935242d9d992a2c9570180" },
   "bufferline.nvim": { "branch": "main", "commit": "f4b4b980ce88d546aeb69d11463187c8f716a1a1" },
   "copilot.vim": { "branch": "release", "commit": "b603990a639bb4b8651d054ef8d5a8fe5db56e0c" },
   "dashboard-nvim": { "branch": "master", "commit": "a0a78099658c7d4be3714f657b18ca8285d5d106" },
