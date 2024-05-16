@@ -56,8 +56,6 @@ function M.setup()
   vim.keymap.set('v', '<leader>gh', ":<C-u>'<,'>GBrowse<CR>", {noremap = true, silent = true})
   vim.keymap.set('n', '<leader>gl', '<cmd>Git log<CR>', { noremap = true, silent = true })
   vim.keymap.set('n', '<leader>dv', '<cmd>:Gvdiffsplit<CR>', { noremap = true, silent = true })
-  vim.api.nvim_create_user_command('FTermToggle', require('FTerm').toggle, { bang = true })
-  vim.keymap.set('n', '<leader>ft', '<cmd>FTermToggle<CR>', { noremap = true, silent = true })
 
   -- Open config files
   vim.keymap.set('n', '<leader>c', function()
