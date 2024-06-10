@@ -20,8 +20,8 @@ function M.setup()
   vim.o.ruler = true              -- Always show the cursor position
   vim.o.shiftwidth = 2            -- Number of spaces to use for each step of (auto)indent
   vim.o.tabstop = 2               -- Number of spaces that a <Tab> in the file counts for
-  vim.o.novisualbell = true       -- Disable visual bell
-  vim.o.noerrorbells = true       -- Disable error bells
+  --vim.o.novisualbell = true       -- Disable visual bell
+  --vim.o.noerrorbells = true       -- Disable error bells
   vim.o.lazyredraw = true         -- Redraw only when necessary
   vim.o.smartcase = true          -- Smart case sensitivity
   vim.o.clipboard = "unnamedplus" -- Use system clipboard
