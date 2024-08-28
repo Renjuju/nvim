@@ -23,5 +23,8 @@ return {
         path = "/Users/renju/github.com/Renjuju/block-notes",
       },
     },
+    follow_url_func = function(url)
+      vim.fn.jobstart({"open", url})  -- Mac OS
+    end,
   },
 }
