@@ -28,6 +28,8 @@ function M.setup()
   vim.wo.colorcolumn = "80"       -- Set color column at 80th column
   vim.o.conceallevel = 1          -- Show concealable characters
 
+  vim.o.background = "dark"       -- Set background to dark
+
   -- Auto indent settings
   vim.o.autoindent = true
 
