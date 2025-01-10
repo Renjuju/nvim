@@ -3,6 +3,11 @@ return {
   config = function()
     require("nvim-treesitter.configs").setup({
       ensure_installed = {
+        "lua",
+        "luadoc",
+        "markdown",
+        "vim",
+        "vimdoc",
         "bash",
         "c",
         "diff",
@@ -16,7 +21,6 @@ return {
         "lua",
         "luadoc",
         "luap",
-        "markdown",
         "markdown_inline",
         "python",
         "query",
@@ -33,7 +37,7 @@ return {
       },
       highlight = {
         enable = true,
-        disable = { "markdown", "markdown_inline" }
+        -- disable = { "markdown", "markdown_inline" }
       },
       indent = {
         enable = true,
